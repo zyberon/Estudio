@@ -37,3 +37,10 @@ vision: como funciona en action
 - universal --> protocolos convencionales para todos los lenguajes
 - vendor neutral: no depender de un solo backend y facil switch
 - muy desacoplada --> usas lo que necesites
+- telemetría tiene que ser built-in: instrumentación nativa con el stack
+
+Observability es lo que conducie la innovacion y reliability pero. necesita una telemtria consistente.
+
+## Engineering values
+
+![[Pasted image 20261108153249.png]]
