@@ -47,4 +47,4 @@ Observability es lo que conducie la innovacion y reliability pero. necesita una 
 
 # Specificacion y standarsds
 
-![[Pasted image 20261108163338.png]]![[Pasted image 20261108163855.png]]
+![[Pasted image 20261108163338.png]]![[Pasted image 20261108175636.png]]
