@@ -44,3 +44,7 @@ Observability es lo que conducie la innovacion y reliability pero. necesita una 
 ## Engineering values
 
 ![[Pasted image 20261108153249.png]]
+
+# Specificacion y standarsds
+
+![[Pasted image 20261108163338.png]]![[Pasted image 20261108163855.png]]
