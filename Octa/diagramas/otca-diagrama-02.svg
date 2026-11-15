@@ -1,0 +1,9 @@
+<svg width="680" viewBox="0 0 680 170" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" font-size="12"><rect width="100%" height="100%" fill="#ffffff"/>
+<rect x="20" y="15" width="620" height="22" rx="4" fill="#CECBF6"/><text x="28" y="30" fill="#26215C">frontend  POST /checkout  (root, SERVER)  2,29 s</text>
+<rect x="40" y="45" width="590" height="22" rx="4" fill="#AFA9EC"/><text x="48" y="60" fill="#26215C">checkout  placeOrder  2,27 s</text>
+<rect x="60" y="75" width="120" height="22" rx="4" fill="#9FE1CB"/><text x="66" y="90" fill="#04342C">getCart</text>
+<rect x="185" y="75" width="300" height="22" rx="4" fill="#9FE1CB"/><text x="191" y="90" fill="#04342C">payment  charge  (CLIENT)</text>
+<rect x="490" y="75" width="110" height="22" rx="4" fill="#9FE1CB"/><text x="496" y="90" fill="#04342C">shipping</text>
+<rect x="490" y="105" width="130" height="22" rx="4" fill="#F7C1C1"/><text x="496" y="120" fill="#501313">email  ERROR</text>
+<text x="20" y="155" fill="#555">Tiempo →    Las barras rojas marcan spans con status ERROR.</text>
+</svg>
