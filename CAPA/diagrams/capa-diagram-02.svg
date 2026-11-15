@@ -1,0 +1,12 @@
+<svg width="680" viewBox="0 0 680 120" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif" font-size="12"><rect width="100%" height="100%" fill="#ffffff"/>
+<defs><marker id="c2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M2 1L8 5L2 9" fill="none" stroke="#555" stroke-width="1.5"/></marker></defs>
+<g fill="#F1EFE8" stroke="#5F5E5A"><rect x="5" y="35" width="110" height="46" rx="6"/></g>
+<g fill="#E1F5EE" stroke="#0F6E56"><rect x="145" y="35" width="120" height="46" rx="6"/><rect x="295" y="35" width="110" height="46" rx="6"/><rect x="435" y="35" width="110" height="46" rx="6"/></g>
+<g fill="#FAECE7" stroke="#993C1D"><rect x="575" y="35" width="100" height="46" rx="6"/></g>
+<g text-anchor="middle"><text x="60" y="55" fill="#444441">Webhook, S3,</text><text x="60" y="71" fill="#444441">Kafka, cron…</text>
+<text x="205" y="55" fill="#085041">EventSource</text><text x="205" y="71" fill="#085041">→ CloudEvents</text>
+<text x="350" y="55" fill="#085041">EventBus</text><text x="350" y="71" fill="#085041">JetStream/Kafka</text>
+<text x="490" y="55" fill="#085041">Sensor</text><text x="490" y="71" fill="#085041">dependencies</text>
+<text x="625" y="55" fill="#712B13">Triggers</text><text x="625" y="71" fill="#712B13">WF, K8s, HTTP</text></g>
+<g stroke="#555" marker-end="url(#c2)"><line x1="117" y1="58" x2="142" y2="58"/><line x1="267" y1="58" x2="292" y2="58"/><line x1="407" y1="58" x2="432" y2="58"/><line x1="547" y1="58" x2="572" y2="58"/></g>
+</svg>

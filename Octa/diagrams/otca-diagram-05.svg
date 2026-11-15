@@ -10,6 +10,6 @@
 <text x="410" y="66" fill="#3C3489" font-weight="bold">processor</text><text x="410" y="83" fill="#3C3489">batch</text>
 <text x="585" y="57" fill="#712B13">exporter otlp</text><text x="585" y="100" fill="#712B13">exporter debug</text></g>
 <g stroke="#555" marker-end="url(#a3)"><line x1="152" y1="70" x2="182" y2="70"/><line x1="317" y1="70" x2="342" y2="70"/><line x1="477" y1="64" x2="507" y2="52"/><line x1="477" y1="76" x2="507" y2="92"/></g>
-<text x="18" y="140" fill="#444441">Extensions (fuera de los pipelines): health_check, pprof, zpages, auth, file_storage</text>
-<text x="340" y="185" text-anchor="middle" fill="#555">Los processors se ejecutan en orden; varios exporters = fan-out</text>
+<text x="18" y="140" fill="#444441">Extensions (outside pipelines): health_check, pprof, zpages, auth, file_storage</text>
+<text x="340" y="185" text-anchor="middle" fill="#555">Processors run in order; several exporters = fan-out</text>
 </svg>
