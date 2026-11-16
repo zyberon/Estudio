@@ -5,6 +5,18 @@ tags: [dynatrace, dql, blueprint]
 
 Plantilla para comparar dos métricas por las mismas dimensiones (p. ej. recomendación VPA vs request/uso real). Cambia solo lo que está en `<...>`.
 
+## Por qué tiene esta forma
+
+Los datos que quieres comparar vienen de **dos métricas distintas con labels distintas**: la recomendación sale de kube-state-metrics (`target_name`, `container`) y el request/uso sale de Dynatrace (`k8s.workload.name`, `k8s.container.name`). Un solo `timeseries` no puede mezclarlas en la misma fila, así que:
+
+1. **Primer `timeseries`** → saca una fila por contenedor con lo que recomienda el VPA.
+2. **Segundo `timeseries` (dentro del `join`)** → saca una fila por contenedor con request y uso reales.
+3. **`join` + `on`** → pega las dos filas que hablan del mismo contenedor, diciéndole qué columna de un lado equivale a cuál del otro (porque se llaman distinto).
+4. **`fields`** → convierte los arrays en un número, pasa a unidades legibles y ordena columnas.
+5. **`fieldsAdd`** → calcula el % a partir de los valores ya limpios (no se puede en el mismo `fields`, ahí aún son arrays).
+
+Se agrupa por namespace + workload + contenedor porque es el nivel al que el VPA da recomendaciones; con menos labels mezclarías contenedores distintos del mismo pod. Y se usa `avg` porque el VPA recomienda **por pod**, no la suma de todas las réplicas.
+
 ## Plantilla
 
 ```
